@@ -1,0 +1,7 @@
+.pio/
+Old/
+test/
+.DS_Store
+*.csv
+ANALYSIS.md
+src/main_v2.cpp

@@ -1,0 +1,62 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/include",
+                "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/src",
+                "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/.pio/libdeps/leonardo/CAN_BUS_Shield",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/variants/leonardo",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/include",
+                    "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/src",
+                    "/Users/gareth/Documents/PlatformIO/Projects/W211 Gear Selector/.pio/libdeps/leonardo/CAN_BUS_Shield",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/variants/leonardo",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/Users/gareth/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "ARDUINO_AVR_LEONARDO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "USB_VID=0x2341",
+                "USB_PID=0x8036",
+                "USB_PRODUCT=\"Arduino Leonardo\"",
+                "USB_MANUFACTURER=\"Arduino\"",
+                "__AVR_ATmega32U4__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/Users/gareth/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega32u4",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
