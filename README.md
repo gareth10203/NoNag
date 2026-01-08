@@ -181,25 +181,45 @@ if (timeToToggle) {
 timeToToggle = !timeToToggle;
 ```
 
-## Known Issues - Help Wanted!
+## Status
 
-The following ECU DTCs remain and **we are actively seeking help to resolve them**:
+**No known errors at this time.** ✅
 
-| DTC | Description | Status |
-|-----|-------------|--------|
-| 2218-1 | Transmission Control Electronic Transmission Control (ETC/EGS) Fault 1 | Stored |
-| 2226-1 | Transmission Control Electronic Transmission Control (ETC/EGS) Fault 9 | Stored |
-| 2204-1 | External quantity control by N15/3 (ETC/EGS Module) Toggle Fault | Stored/Current |
+Tested and working on a 2005 W211 E-Class with no EGS-related DTCs.
 
-**These codes do not affect driveability** - the car drives perfectly with full power. However, we would like to eliminate them if possible.
+If you encounter any faults or DTCs, please [open an issue](https://github.com/gareth10203/NoNag/issues) with:
+- Your vehicle details (model, year, engine)
+- The DTC codes you're seeing
+- A CAN bus trace if possible (this helps enormously with debugging)
 
-### What We've Tried
-- Adding NAK_TGL toggle to 0x338 - no change
-- Setting CALID_CVN_AKT = 1 - caused additional DTCs
-- Various 0x418 byte layouts from NAG52 structure - caused ABS faults
-- Adding MPAR_EGS parity bit - no change
+## Community CAN Data Request 🙏
 
-If you have experience with Mercedes EGS CAN protocols or ideas on what the ECU might be checking for, please open an issue or PR!
+**We need your help to improve NoNag!**
+
+If you have access to a working Mercedes with NAG52 automatic transmission (W211, W203, W209, etc.), we would love CAN bus captures to analyze and compare against our emulation.
+
+### What We're Looking For
+
+- **CAN-C (Powertrain CAN) captures** at 500kbps
+- **Driving scenarios**: startup, idle, driving through gears, reverse
+- Filter for EGS messages if possible: `0x218`, `0x230`, `0x338`, `0x418`
+- Any format works: CSV, ASC, BLF, PCAN logs, etc.
+
+### How to Contribute
+
+1. **Open an issue** on this repository with your CAN capture attached
+2. Include details about your vehicle (model year, engine, transmission type)
+3. Describe what driving scenario was captured
+
+Even a short 30-second capture of normal driving would be incredibly valuable for validating and improving the emulation.
+
+### Why This Helps
+
+Comparing real NAG52 data against our emulation helps us:
+- Validate our message timing and values
+- Discover additional signals we may be missing
+- Ensure compatibility across different model years
+- Potentially add features like proper gear position feedback
 
 ## Building & Uploading
 
