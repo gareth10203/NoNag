@@ -5,3 +5,4 @@ test/
 *.csv
 ANALYSIS.md
 src/main_v2.cpp
+main_v1_backup.cpp
